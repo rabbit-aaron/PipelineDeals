@@ -7,5 +7,13 @@ class PipelineDealsHTTPException(PipelineDealsException):
         self.response = response
 
 
+class PipelineDealsHTTP404Exception(PipelineDealsHTTPException):
+    pass
+
+
+class PipelineDealsHTTP422Exception(PipelineDealsHTTPException):
+    pass
+
+
 class PipelineDealsHTTP500Exception(PipelineDealsHTTPException):
     pass
